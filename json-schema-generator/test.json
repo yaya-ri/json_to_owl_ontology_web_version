@@ -1,0 +1,72 @@
+{
+  "kesehatan": {
+    "penyakit": [
+      {
+        "idP": 101,
+        "namaP": "Malaria",
+        "obat": {
+          "namaO": "obatMalaria",
+          "kandungan": {
+            "tumbuhan": "jahe",
+            "senyawa": "Hcl"
+          }
+        }
+      },
+      {
+        "idP": 102,
+        "namaP": "demam Berdarah",
+        "obat": {
+          "namaO": "obatDemamBerdarah",
+          "kandungan": {
+            "tumbuhan": "Temulawak",
+            "senyawa": "NaC20"
+          }
+        }
+      },
+      {
+        "idP": 103,
+        "namaP": "Diare",
+        "obat": {
+          "namaO": "obatDiare",
+          "kandungan": {
+            "tumbuhan": "DaunTeh",
+            "senyawa": "Np2H"
+          }
+        }
+      },
+      {
+        "idP": 104,
+        "namaP": "TBC",
+        "obat": {
+          "namaO": "obatTBC",
+          "kandungan": {
+            "tumbuhan": "Kunyit",
+            "senyawa": "H3P2"
+          }
+        }
+      },
+      {
+        "idP": 105,
+        "namaP": "Tifus",
+        "obat": {
+          "namaO": "obatTifus",
+          "kandungan": {
+            "tumbuhan": "DaunPepaya",
+            "senyawa": "NaP4"
+          }
+        }
+      },
+      {
+        "idP": 106,
+        "namaP": "Campak",
+        "obat": {
+          "namaO": "obatCampak",
+          "kandungan": {
+            "tumbuhan": "DaunUbiJalar",
+            "senyawa": "k3P2"
+          }
+        }
+      }
+    ]
+  }
+}

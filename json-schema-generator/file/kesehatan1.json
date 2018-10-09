@@ -1,0 +1,17 @@
+{
+  "kesehatan": {
+    "penyakit": [
+      {
+        "idP": 101,
+        "namaP": "Malaria",
+        "obat": {
+          "namaO": "obatMalaria",
+          "kandungan": {
+            "tumbuhan": "jahe",
+            "senyawa": "Hcl"
+          }
+        }
+      }
+    ]
+  }
+}
