@@ -15,6 +15,24 @@ public class Session {
     private static String user_email;
     private static String user_password;
     private static String fileName;
+    private static String listOfJson;
+    private static String resultProcess;
+
+    public static String getResultProcess() {
+        return resultProcess;
+    }
+
+    public static void setResultProcess(String resultProcess) {
+        Session.resultProcess = resultProcess;
+    }
+
+    public static String getListOfJson() {
+        return listOfJson;
+    }
+
+    public static void setListOfJson(String listOfJson) {
+        Session.listOfJson = listOfJson;
+    }
 
     public static String getFileName() {
         return fileName;

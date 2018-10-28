@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "daftar_kecamatan": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "required": [
+              "id_prov"
+            ],
+            "properties": {
+              "id_prov": {
+                "type": "string",
+                "minLength": 1
+              },
+              "informasi": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "nama": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "id",
+                  "nama"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "daftar_kecamatan"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

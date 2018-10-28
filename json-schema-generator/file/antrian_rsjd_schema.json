@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "umum": {
+      "type": "object",
+      "properties": {
+        "antrian": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "required": [
+              "klinik"
+            ],
+            "properties": {
+              "klinik": {
+                "type": "string",
+                "minLength": 1
+              },
+              "keterangan": {
+                "type": "object",
+                "properties": {
+                  "kode_bagian": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sdh_panggil": {
+                    "type": "number"
+                  },
+                  "blm_panggil": {
+                    "type": "number"
+                  },
+                  "sdg_panggil": {
+                    "type": "number"
+                  },
+                  "jml_pasien": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "kode_bagian",
+                  "sdh_panggil",
+                  "blm_panggil",
+                  "sdg_panggil",
+                  "jml_pasien"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "antrian"
+      ]
+    }
+  },
+  "required": [
+    "umum"
+  ]
+}

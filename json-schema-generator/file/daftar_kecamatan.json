@@ -1,0 +1,192 @@
+{
+  "data":{
+    "daftar_kecamatan": [
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3201",
+          "nama": "Kab.Bogor"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3202",
+          "nama": "Kab.Sukabumi"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3203",
+          "nama": "Kab.Cianjur"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3204",
+          "nama": "Kab.Bandung"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3205",
+          "nama": "Kab.HGarut"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3206",
+          "nama": "Kab.Tasikmalaya"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3207",
+          "nama": "Kab.Ciamis"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3208",
+        "nama": "Kab.Kuningan"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3209",
+          "nama": "Kab.Cirebon"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3210",
+          "nama": "Kab.Majalengka"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3211",
+          "nama": "Kab.Sumedang"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3212",
+          "nama": "Kab.Indramayu"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3213",
+          "nama": "Kab.Subang"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3214",
+          "nama": "Kab.Purwakarta"
+        }
+      },
+      {
+        "id": "3215",
+        "nama": "Kab.Karawang"
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3216",
+          "nama": "Kab.Bekasi"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3217",
+          "nama": "Kab.Bandung Barat"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3218",
+          "nama": "Kab.Pangandaran"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3271",
+          "nama": "Kota Bogor"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3272",
+          "nama": "Kota Sukabumi"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3273",
+          "nama": "Kota Bandung"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3274",
+          "nama": "Kota Cirebon"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3275",
+          "nama": "Kota Bekasi"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3276",
+          "nama": "Kota Depok"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3277",
+          "nama": "Kota Cimahi"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+          "id": "3278",
+          "nama": "Kota Tasikmalaya"
+        }
+      },
+      {
+        "id_prov": "32",
+        "informasi":{
+            "id": "3279",
+          "nama": "Kota Banjar"
+        }
+      }
+    ]
+  }
+}

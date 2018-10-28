@@ -1,0 +1,189 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:base="http://www.example.com/merge.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://www.example.com/merge.owl#informasi"/>
+  <owl:Class rdf:about="http://www.example.com/merge.owl#data"/>
+  <owl:Class rdf:about="http://www.example.com/merge.owl#daftar_kecamatan"/>
+  <owl:ObjectProperty rdf:about="http://www.example.com/merge.owl#punyainformasi">
+    <rdfs:range rdf:resource="http://www.example.com/merge.owl#informasi"/>
+    <rdfs:domain rdf:resource="http://www.example.com/merge.owl#daftar_kecamatan"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.example.com/merge.owl#punyadaftar_kecamatan">
+    <rdfs:range rdf:resource="http://www.example.com/merge.owl#daftar_kecamatan"/>
+    <rdfs:domain rdf:resource="http://www.example.com/merge.owl#data"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.example.com/merge.owl#punyaid">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.example.com/merge.owl#informasi"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.example.com/merge.owl#punyaid_prov">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.example.com/merge.owl#daftar_kecamatan"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.example.com/merge.owl#punyanama">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.example.com/merge.owl#informasi"/>
+  </owl:DatatypeProperty>
+  <base:daftar_kecamatan rdf:about="http://www.example.com/merge.owl#32">
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3278">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Tasikmalaya</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3278</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3217">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Bandung Barat</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3217</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3216">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Bekasi</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3216</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3279">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Banjar</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3279</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3273">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Bandung</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3273</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3210">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Majalengka</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3210</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3204">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Bandung</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3204</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3276">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Depok</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3276</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3214">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Purwakarta</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3214</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3205">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.HGarut</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3205</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3271">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Bogor</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3271</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3202">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Sukabumi</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3202</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3211">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Sumedang</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3211</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3277">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Cimahi</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3277</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3203">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Cianjur</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3203</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3208">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Kuningan</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3208</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3218">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Pangandaran</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3218</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3209">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Cirebon</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3209</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3212">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Indramayu</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3212</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3275">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Bekasi</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3275</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3274">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Cirebon</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3274</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3213">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Subang</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3213</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3206">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Tasikmalaya</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3206</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3207">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Ciamis</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3207</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3201">
+        <base:punyanama>http://www.example.com/merge.owl#Kab.Bogor</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3201</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyainformasi>
+      <base:informasi rdf:about="http://www.example.com/merge.owl#3272">
+        <base:punyanama>http://www.example.com/merge.owl#Kota Sukabumi</base:punyanama>
+        <base:punyaid>http://www.example.com/merge.owl#3272</base:punyaid>
+      </base:informasi>
+    </base:punyainformasi>
+    <base:punyaid_prov>http://www.example.com/merge.owl#32</base:punyaid_prov>
+  </base:daftar_kecamatan>
+</rdf:RDF>

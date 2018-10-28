@@ -1,0 +1,86 @@
+{
+   "umum":{
+    "antrian": [
+      {
+        "klinik":"KLINIK_GIGI",
+        "keterangan":{
+          "kode_bagian": "9106",
+          "sdh_panggil": 2,
+          "blm_panggil": 1,
+          "sdg_panggil": 2,
+          "jml_pasien": 3
+        }
+      },
+      {
+        "klinik":"KLINIK_MEDIKOLEGAL",
+          "keterangan":{
+          "kode_bagian": "9119",
+          "sdh_panggil": 18,
+          "blm_panggil": 2,
+          "sdg_panggil": 20,
+          "jml_pasien": 20
+        }
+      },
+      {
+        "klinik":"KLINIK_TERAPI_WICARA",
+        "keterangan":{
+          "kode_bagian": "9415",
+          "sdh_panggil": 5,
+          "blm_panggil": 0,
+          "sdg_panggil": 1,
+          "jml_pasien": 5
+        }
+      },
+      {
+        "klinik":"KLINIK_FISIOTERAPI",
+        "keterangan":{
+          "kode_bagian": "9410",
+          "sdh_panggil": 3,
+          "blm_panggil": 0,
+          "sdg_panggil": 4,
+          "jml_pasien": 3
+        }
+      },
+      {
+        "klinik":"KLINIK_TKAR",
+        "keterangan":{
+          "kode_bagian": "9103",
+          "sdh_panggil": 1,
+          "blm_panggil": 0,
+          "sdg_panggil": 1,
+          "jml_pasien": 1
+        }
+      },
+      {
+        "klinik":"KLINIK_PSIKOGERIATRI",
+        "keterangan":{
+          "kode_bagian": "9118",
+          "sdh_panggil": 6,
+          "blm_panggil": 12,
+          "sdg_panggil": 6,
+          "jml_pasien": 18
+        }
+      },
+      {
+        "klinik":"KLINIK_JIWA",
+        "keterangan":{
+          "kode_bagian": "9101",
+          "sdh_panggil": 27,
+          "blm_panggil": 63,
+          "sdg_panggil": 31,
+          "jml_pasien": 90
+        }
+      },
+      {
+        "klinik":"KLINIK_PENYAKIT_DALAM",
+        "keterangan":{
+          "kode_bagian": "9109",
+          "sdh_panggil": 8,
+          "blm_panggil": 2,
+          "sdg_panggil": 8,
+          "jml_pasien": 10
+        }
+      }
+    ]
+  }
+}

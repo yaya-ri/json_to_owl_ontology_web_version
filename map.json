@@ -1,0 +1,127 @@
+{
+  "map":{
+    "serviceDescription": "Peta_ini_bersumber_dari_data_RBI_Skala_1:25.000",
+    "mapName": "Rupa_Bumi_Indonesia",
+    "description": "",
+    "copyrightText": "Badan_Informasi_Geospasial",
+    "supportsDynamicLayers": false,
+    "layers": [
+      {
+        "id": 0,
+        "name": "TRANSPORTASI",
+        "parentLayerId": -1,
+        "defaultVisibility": true,
+        "minScale": 0,
+        "maxScale": 0
+      },
+      {
+        "id": 1,
+        "name": "Bandara",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 2,
+        "name": "Light Signal",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 3,
+        "name": "Tiang dan Pelampung Navigasi",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 4,
+        "name": "Pelabuhan",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 5,
+        "name": "Dermaga",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 6,
+        "name": "Pal Kilometer",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 7,
+        "name": "Ruas Jalan",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 10000000,
+        "maxScale": 250001
+      },
+      {
+        "id": 8,
+        "name": "Ruas Jalan",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 9,
+        "name": "Jalur Kereta Api",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 750000,
+        "maxScale": 0
+      },
+      {
+        "id": 10,
+        "name": "Jembatan",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 11,
+        "name": "Landas Pacu",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 250000,
+        "maxScale": 0
+      },
+      {
+        "id": 12,
+        "name": "Wilayah Bandara",
+        "parentLayerId": 0,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 0,
+        "maxScale": 0
+      }
+    ]
+  }
+}

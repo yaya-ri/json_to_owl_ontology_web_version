@@ -55,4 +55,34 @@
     <base:punyanamaP>http://www.example.com/merge.owl#Malaria</base:punyanamaP>
     <base:punyaidP>http://www.example.com/merge.owl#101</base:punyaidP>
   </base:penyakit>
+  <base:penyakit rdf:about="http://www.example.com/merge.owl#103">
+    <base:punyaobat>
+      <base:obat rdf:about="http://www.example.com/merge.owl#obatDiare">
+        <base:punyakandungan>
+          <base:kandungan rdf:about="http://www.example.com/merge.owl#DaunTeh">
+            <base:punyasenyawa>http://www.example.com/merge.owl#Np2H</base:punyasenyawa>
+            <base:punyatumbuhan>http://www.example.com/merge.owl#DaunTeh</base:punyatumbuhan>
+          </base:kandungan>
+        </base:punyakandungan>
+        <base:punyanamaO>http://www.example.com/merge.owl#obatDiare</base:punyanamaO>
+      </base:obat>
+    </base:punyaobat>
+    <base:punyanamaP>http://www.example.com/merge.owl#Diare</base:punyanamaP>
+    <base:punyaidP>http://www.example.com/merge.owl#103</base:punyaidP>
+  </base:penyakit>
+  <base:penyakit rdf:about="http://www.example.com/merge.owl#102">
+    <base:punyaobat>
+      <base:obat rdf:about="http://www.example.com/merge.owl#obatDemamBerdarah">
+        <base:punyakandungan>
+          <base:kandungan rdf:about="http://www.example.com/merge.owl#Temulawak">
+            <base:punyasenyawa>http://www.example.com/merge.owl#NaC20</base:punyasenyawa>
+            <base:punyatumbuhan>http://www.example.com/merge.owl#Temulawak</base:punyatumbuhan>
+          </base:kandungan>
+        </base:punyakandungan>
+        <base:punyanamaO>http://www.example.com/merge.owl#obatDemamBerdarah</base:punyanamaO>
+      </base:obat>
+    </base:punyaobat>
+    <base:punyanamaP>http://www.example.com/merge.owl#demam Berdarah</base:punyanamaP>
+    <base:punyaidP>http://www.example.com/merge.owl#102</base:punyaidP>
+  </base:penyakit>
 </rdf:RDF>

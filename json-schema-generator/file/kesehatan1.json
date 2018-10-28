@@ -11,6 +11,28 @@
             "senyawa": "Hcl"
           }
         }
+      },
+      {
+        "idP": 102,
+        "namaP": "demam Berdarah",
+        "obat": {
+          "namaO": "obatDemamBerdarah",
+          "kandungan": {
+            "tumbuhan": "Temulawak",
+            "senyawa": "NaC20"
+          }
+        }
+      },
+      {
+        "idP": 103,
+        "namaP": "Diare",
+        "obat": {
+          "namaO": "obatDiare",
+          "kandungan": {
+            "tumbuhan": "DaunTeh",
+            "senyawa": "Np2H"
+          }
+        }
       }
     ]
   }

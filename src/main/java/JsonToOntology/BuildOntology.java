@@ -12,6 +12,7 @@ import java.io.FileOutputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import org.apache.jena.ontology.DatatypeProperty;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
@@ -24,6 +25,7 @@ import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.util.PrintUtil;
+import org.apache.jena.util.iterator.ExtendedIterator;
 import org.apache.jena.vocabulary.XSD;
 
 /**
@@ -40,18 +42,38 @@ public class BuildOntology {
         OntModel mo = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
         mo.setNsPrefix("", mergeURI);
         mo.setNsPrefix("base", mergeURI);
+        
+        //mo.shortForm("\n\n\n\n");
 
 //        Create Class
         for (int i = 0; i < listClass.size(); i++) {
             mo.createClass(mergeURI + listClass.get(i));
         }
 
+        //get Classs
+            for (Iterator<OntClass> i = mo.listClasses(); i.hasNext();) {
+                OntClass cls = i.next();
+                System.out.println(cls.getLabel(mergeURI));
+                System.out.println(cls.getNameSpace());
+            }
+        
 //        Create Object Property
         for (int i = 0; i < listObjectProperty.length; i++) {
             ObjectProperty oop = mo.createObjectProperty(mergeURI + listObjectProperty[i].get(1));
             oop.addDomain(mo.getResource(mergeURI + listObjectProperty[i].get(0)));
             oop.addRange(mo.getResource(mergeURI + listObjectProperty[i].get(2)));
         }
+         
+//        System.out.println("");
+//        System.out.println("");
+//        // get object Property    
+//            for (ExtendedIterator<ObjectProperty> i = mo.listObjectProperties(); i.hasNext();) {
+//                ObjectProperty objectProperty = i.next();
+//                System.out.println(objectProperty.toString());
+//                System.out.println("    "+objectProperty.getRange());
+//                System.out.println("    "+objectProperty.getDomain());
+//                System.out.println(objectProperty.getEquivalentProperty());
+//            }
 
         //Create Data type property
         for (int i = 0; i < listDataTypeProperty.length; i++) {
@@ -90,7 +112,7 @@ public class BuildOntology {
             Resource ex = mo.getResource(mergeURI + listStatementObjectProperty[i].get(0));
             Property ex1 = mo.getProperty(mergeURI + listStatementObjectProperty[i].get(1));
             Statement news = mo.createStatement(ex, ex1, o);
-            System.out.println(news);
+            //System.out.println(news);
             mo.add(news);
             check=true;
             

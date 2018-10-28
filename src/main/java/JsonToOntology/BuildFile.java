@@ -5,6 +5,8 @@
  */
 package JsonToOntology;
 
+import DatabaseProcess.ReadFile;
+import DatabaseProcess.Session;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.FileNotFoundException;
@@ -23,6 +25,12 @@ public class BuildFile {
      * @param args the command line arguments
      * @throws java.io.IOException
      */
+    private static String listOfJson;
+    
+    public static String getListOfJson() {
+        return listOfJson;
+    }
+    
     public boolean BuildFile(String nameJsonFile) throws FileNotFoundException, IOException, SQLException {
         boolean check=false;
         
@@ -221,6 +229,16 @@ public class BuildFile {
         //final list class
         System.out.println("- List Class:");
         System.out.println("    " + buildListClass.toString());
+        
+        //Input list of json-----------------------------------------------------------------------------------------------------
+        
+        listOfJson = "- List Class:";
+        listOfJson = listOfJson+"\n";
+        listOfJson = listOfJson + "    "+buildListClass.toString();
+        listOfJson = listOfJson+"\n"+"\n";
+        //System.out.println(listOfJson);
+         
+        //-----------------------------------------------------------------------------------------------------------------------
 
         //-----------------------------------------------------------------------------------------------------------------------
         System.out.println("");
@@ -253,6 +271,18 @@ public class BuildFile {
         //-----------------------------------------------------------------------------------------------------------------------        
 
         
+        //Input list of json-----------------------------------------------------------------------------------------------------
+        listOfJson = listOfJson+"- List Object Property:";
+        listOfJson = listOfJson + "\n";
+        for (int i = 0; i < buildListObjectProperty.length; i++) {
+            listOfJson = listOfJson + "    " + buildListObjectProperty[i].toString();
+            listOfJson = listOfJson + "\n";
+        }
+        listOfJson = listOfJson+"\n"+"\n";
+        //System.out.println(listOfJson);
+
+        //-----------------------------------------------------------------------------------------------------------------------
+
         
         //list class to property-------------------------------------------------------------------------------------------------
         int sizeListCtoP = tmpDatatypeProperty.size() / 3;
@@ -287,7 +317,20 @@ public class BuildFile {
             System.out.println("    " + buildListDataTypeProperty[i].toString());
         }
         //-----------------------------------------------------------------------------------------------------------------------
+        
+        //Input list of json-----------------------------------------------------------------------------------------------------
+        listOfJson = listOfJson + "- List Data Type Property:";
+        listOfJson = listOfJson + "\n";
+        for (int i = 0; i < buildListDataTypeProperty.length; i++) {
+            listOfJson = listOfJson + "    " + buildListDataTypeProperty[i].toString();
+            listOfJson = listOfJson + "\n";
+        }
+        listOfJson = listOfJson + "\n" + "\n";
+        //System.out.println(listOfJson);
 
+        //-----------------------------------------------------------------------------------------------------------------------
+
+        
         System.out.println("");
 
         
@@ -472,6 +515,20 @@ public class BuildFile {
         }
 
         //-----------------------------------------------------------------------------------------------------------------------
+        
+        //Input list of json-----------------------------------------------------------------------------------------------------
+        listOfJson = listOfJson + "- List Individu Name:";
+        listOfJson = listOfJson + "\n";
+        for (int i = 0; i < buildListIndividual.length; i++) {
+            listOfJson = listOfJson + "    " + buildListIndividual[i].toString();
+            listOfJson = listOfJson + "\n";
+        }
+        listOfJson = listOfJson + "\n" + "\n";
+        //System.out.println(listOfJson);
+
+        //-----------------------------------------------------------------------------------------------------------------------
+
+        
         System.out.println("");
 
         
@@ -519,12 +576,26 @@ public class BuildFile {
 
         }
 
-        System.out.println("- List Statemen: ");
+        System.out.println("- List Statemen Data Type property: ");
         for (int i = 0; i < buildListStatementDP.length; i++) {
             System.out.println("    " + buildListStatementDP[i].toString());
         }
 
         //-----------------------------------------------------------------------------------------------------------------------
+        
+        //Input list of json-----------------------------------------------------------------------------------------------------
+        listOfJson = listOfJson + "- List Statemen Data Type property:";
+        listOfJson = listOfJson + "\n";
+        for (int i = 0; i < buildListStatementDP.length; i++) {
+            listOfJson = listOfJson + "    " + buildListStatementDP[i].toString();
+            listOfJson = listOfJson + "\n";
+        }
+        listOfJson = listOfJson + "\n" + "\n";
+        //System.out.println(listOfJson);
+
+        //-----------------------------------------------------------------------------------------------------------------------
+
+        
         System.out.println("");
 
         
@@ -553,12 +624,37 @@ public class BuildFile {
 
         //-----------------------------------------------------------------------------------------------------------------------
         
+        //Input list of json-----------------------------------------------------------------------------------------------------
+        listOfJson = listOfJson + "- List Statemen Data Type property:";
+        listOfJson = listOfJson + "\n";
+        for (int i = 0; i < buildListStatementOP.length; i++) {
+            listOfJson = listOfJson + "    " + buildListStatementOP[i].toString();
+            listOfJson = listOfJson + "\n";
+        }
+        listOfJson = listOfJson + "\n" + "\n";
+        //System.out.println(listOfJson);
+
+        //-----------------------------------------------------------------------------------------------------------------------
+
+        
+//        System.out.println("");
+//        System.out.println(listOfJson);
+        Session.setListOfJson(listOfJson);
 
         //Input list fo OWL ontology
         BuildOntology CreateOntoogy = new BuildOntology();
         if(CreateOntoogy.BuildOWLOntology(buildListClass, buildListObjectProperty, buildListDataTypeProperty, buildListIndividual, buildListStatementDP, buildListStatementOP, nameJsonFile)){
             check=true;
         }
+        
+        //get Output For Process
+        int cClass=buildListClass.size();
+        int cOP = buildListObjectProperty.length*4;
+        int cDP = buildListDataTypeProperty.length*4;
+        ReadFile read = new ReadFile();
+        String resultProcesss = read.fileToStringProcess(nameJsonFile, cClass, cOP, cDP);
+        Session.setResultProcess(resultProcesss);
+        
 
         //-----------------------------------------------------------------------------------------------------------------------
         return check;

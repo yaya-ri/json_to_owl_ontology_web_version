@@ -17,13 +17,14 @@ import java.util.logging.Logger;
  */
 public class Main {
     public static void main(String[] args) throws IOException, FileNotFoundException {
-        String jsonFile="test1";
+        String jsonFile="antrian_rsjd";
+        String jsonFile1 = "kesehatan1";
         GenerateJsonToSchema generateResult = new GenerateJsonToSchema();
         BuildFile builfFile = new BuildFile();
         //generateResult.GenerateJsonToSchema(jsonFile);
-        if (generateResult.GenerateJsonToSchema(jsonFile)) {
+        if (generateResult.GenerateJsonToSchema(jsonFile1)) {
             try {
-                builfFile.BuildFile(jsonFile);
+                builfFile.BuildFile(jsonFile1);
             } catch (SQLException ex) {
                 Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
             }
